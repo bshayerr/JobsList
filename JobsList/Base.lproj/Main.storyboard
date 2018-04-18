@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xPH-YS-vQ4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--JobsVC-->
+        <scene sceneID="qPJ-8I-mng">
+            <objects>
+                <viewController title="Jobs" id="uVI-2R-G6f" userLabel="JobsVC" customClass="JobsVC" customModule="JobsList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wZH-SZ-UqR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-uI-G4i">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for a job" id="Bmm-sa-8a1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="barTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.52494959679999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="uVI-2R-G6f" id="y3t-ts-c88"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="93" id="WTE-DO-Xzh" customClass="JobsCell" customModule="JobsList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WTE-DO-Xzh" id="KMS-iF-nm8" userLabel="TableCells">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmw-IG-hSI" userLabel="cellView">
+                                                    <rect key="frame" x="10" y="5" width="355" height="75"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fbL-2i-1KQ">
+                                                            <rect key="frame" x="98" y="14" width="96.5" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programmer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaT-Zo-JQE" userLabel="JobName">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="96.5" height="23.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                                    <color key="textColor" red="0.0" green="0.20990210849999999" blue="0.2436714163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeekLoop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-XO-Zhk" userLabel="JobProvider">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="96.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                    <color key="textColor" red="0.4717817164" green="0.4717817164" blue="0.4717817164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FemaleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="iwi-8u-yeP">
+                                                            <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="64" id="Sy5-PE-nG0"/>
+                                                                <constraint firstAttribute="height" constant="64" id="sUF-h9-c9g"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="0.52494959679999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="iwi-8u-yeP" firstAttribute="leading" secondItem="Rmw-IG-hSI" secondAttribute="leadingMargin" id="13Y-bV-jeE"/>
+                                                        <constraint firstItem="iwi-8u-yeP" firstAttribute="centerY" secondItem="Rmw-IG-hSI" secondAttribute="centerY" constant="2.5" id="8Te-s3-XSq"/>
+                                                        <constraint firstItem="fbL-2i-1KQ" firstAttribute="top" secondItem="Rmw-IG-hSI" secondAttribute="top" constant="14" id="J8p-J3-dY2"/>
+                                                        <constraint firstItem="iwi-8u-yeP" firstAttribute="top" secondItem="Rmw-IG-hSI" secondAttribute="top" constant="8" id="Yux-RM-Yhg"/>
+                                                        <constraint firstItem="fbL-2i-1KQ" firstAttribute="leading" secondItem="iwi-8u-yeP" secondAttribute="trailing" constant="26" id="ibP-41-tJ6"/>
+                                                        <constraint firstItem="iwi-8u-yeP" firstAttribute="width" secondItem="Rmw-IG-hSI" secondAttribute="height" multiplier="40:43" constant="-5.7674418604651123" id="jZp-in-CNd"/>
+                                                        <constraint firstAttribute="bottom" secondItem="iwi-8u-yeP" secondAttribute="bottom" constant="3" id="oOE-Xd-fIF"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Rmw-IG-hSI" secondAttribute="trailing" constant="10" id="8Uj-Ya-hCd"/>
+                                                <constraint firstItem="Rmw-IG-hSI" firstAttribute="top" secondItem="KMS-iF-nm8" secondAttribute="top" constant="5" id="9BV-Ts-lD4"/>
+                                                <constraint firstItem="Rmw-IG-hSI" firstAttribute="leading" secondItem="KMS-iF-nm8" secondAttribute="leading" constant="10" id="X7R-C0-DAy"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rmw-IG-hSI" secondAttribute="bottom" constant="5" id="YoN-GG-VZo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="JobImage" destination="iwi-8u-yeP" id="v9x-Cu-gUa"/>
+                                            <outlet property="JobName" destination="iaT-Zo-JQE" id="FC8-bn-5qu"/>
+                                            <outlet property="JobProvider" destination="SAi-XO-Zhk" id="zyE-aG-Mcr"/>
+                                            <outlet property="cellView" destination="Rmw-IG-hSI" id="jWQ-8S-NHx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uVI-2R-G6f" id="kWn-eh-yDh"/>
+                                    <outlet property="delegate" destination="uVI-2R-G6f" id="zas-Ef-5Nn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IQM-uI-G4i" firstAttribute="trailing" secondItem="TCQ-N0-rtP" secondAttribute="trailing" id="4RD-92-6Fd"/>
+                            <constraint firstItem="TCQ-N0-rtP" firstAttribute="bottom" secondItem="IQM-uI-G4i" secondAttribute="bottom" id="Tez-5h-BRA"/>
+                            <constraint firstItem="IQM-uI-G4i" firstAttribute="leading" secondItem="TCQ-N0-rtP" secondAttribute="leading" id="WKk-U0-6qr"/>
+                            <constraint firstItem="IQM-uI-G4i" firstAttribute="top" secondItem="TCQ-N0-rtP" secondAttribute="top" id="XGE-KM-Uct"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TCQ-N0-rtP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Jobs" leftItemsSupplementBackButton="YES" id="Lx5-3q-kAl">
+                        <barButtonItem key="backBarButtonItem" title=" " id="hEB-FG-B59"/>
+                        <barButtonItem key="rightBarButtonItem" largeContentSizeImage="add_button" style="done" systemItem="add" id="jAX-vf-rkx">
+                            <color key="tintColor" red="0.64486126730000004" green="0.92684526590000005" blue="0.78781498009999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="AddJobsBtnPressed:" destination="uVI-2R-G6f" id="gi0-K0-OQS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="JobsTable" destination="IQM-uI-G4i" id="hSD-mS-jdU"/>
+                        <outlet property="SearchBar" destination="Bmm-sa-8a1" id="4ip-iq-IiQ"/>
+                        <segue destination="2od-Wc-iVC" kind="show" identifier="toJobDetails" id="N4u-AS-H7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gsn-EF-ssH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="1241.8290854572715"/>
+        </scene>
+        <!--JobDetailsVC-->
+        <scene sceneID="liY-27-Gh5">
+            <objects>
+                <viewController title="Job Details " id="2od-Wc-iVC" userLabel="JobDetailsVC" customClass="JobDetailsVC" customModule="JobsList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwA-XM-oea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="DjH-Gk-T2Y" userLabel="Details Table">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsCell" rowHeight="110" id="VRF-tE-im1" userLabel="customCell" customClass="DetailsCell" customModule="JobsList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRF-tE-im1" id="lFa-9q-B5z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Title: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPB-pG-xrL" userLabel="TitleLbl">
+                                                    <rect key="frame" x="36" y="22" width="325" height="24"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="0.27146914170000003" green="0.40235628810000001" blue="0.46040740990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programmer " lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rg-G8-NB5" userLabel="ContentLbl">
+                                                    <rect key="frame" x="36" y="48" width="325" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="51" id="DhK-md-Rox"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6rg-G8-NB5" firstAttribute="leading" secondItem="lFa-9q-B5z" secondAttribute="leadingMargin" constant="21" id="7jT-nO-N85"/>
+                                                <constraint firstItem="6rg-G8-NB5" firstAttribute="top" secondItem="fPB-pG-xrL" secondAttribute="bottom" constant="2" id="8xg-BR-q4v"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6rg-G8-NB5" secondAttribute="trailing" constant="-1" id="T3c-eX-lUP"/>
+                                                <constraint firstItem="6rg-G8-NB5" firstAttribute="trailing" secondItem="fPB-pG-xrL" secondAttribute="trailing" id="hwa-CU-x1N"/>
+                                                <constraint firstItem="6rg-G8-NB5" firstAttribute="leading" secondItem="fPB-pG-xrL" secondAttribute="leading" id="kAt-qg-SJj"/>
+                                                <constraint firstItem="6rg-G8-NB5" firstAttribute="bottom" secondItem="lFa-9q-B5z" secondAttribute="bottomMargin" id="wTO-pl-xla"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ContetnLbl" destination="6rg-G8-NB5" id="kyT-9I-8oQ"/>
+                                            <outlet property="TitleLbl" destination="fPB-pG-xrL" id="CgP-tM-J18"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DjH-Gk-T2Y" firstAttribute="trailing" secondItem="rUU-aJ-z4c" secondAttribute="trailing" id="2Jl-5V-NTE"/>
+                            <constraint firstItem="DjH-Gk-T2Y" firstAttribute="top" secondItem="rUU-aJ-z4c" secondAttribute="top" id="OQx-yh-RDM"/>
+                            <constraint firstItem="DjH-Gk-T2Y" firstAttribute="bottom" secondItem="rUU-aJ-z4c" secondAttribute="bottom" id="nQj-tS-WMU"/>
+                            <constraint firstItem="DjH-Gk-T2Y" firstAttribute="leading" secondItem="rUU-aJ-z4c" secondAttribute="leading" id="rQX-fm-dHz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rUU-aJ-z4c"/>
+                    </view>
+                    <connections>
+                        <outlet property="DetailsTable" destination="DjH-Gk-T2Y" id="n1H-zz-9ZZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHc-F5-fgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="2010"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bs9-AX-4UN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xPH-YS-vQ4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jBz-g8-Npa">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.67196723879999998" green="0.76842403560000005" blue="0.84506180040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uVI-2R-G6f" kind="relationship" relationship="rootViewController" id="3Hx-El-xbr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YO-Ke-l1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.8000000000002" y="1241.8290854572715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FemaleIcon" width="100" height="105"/>
+        <image name="add_button" width="16" height="16"/>
+    </resources>
+</document>
