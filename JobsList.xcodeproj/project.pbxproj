@@ -11,15 +11,15 @@
 		922BE8F22087116900673A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922BE8F02087116900673A71 /* Main.storyboard */; };
 		922BE8F42087117D00673A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 922BE8F32087117D00673A71 /* Assets.xcassets */; };
 		922BE8F72087117D00673A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922BE8F52087117D00673A71 /* LaunchScreen.storyboard */; };
-		922BE908208713A100673A71 /* JobsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE906208713A100673A71 /* JobsDetails.swift */; };
-		922BE909208713A100673A71 /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE907208713A100673A71 /* Jobs.swift */; };
-		922BE90D208713C700673A71 /* JobDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE90B208713C600673A71 /* JobDetailsVC.swift */; };
-		922BE90E208713C700673A71 /* JobsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE90C208713C600673A71 /* JobsVC.swift */; };
-		922BE9152087141200673A71 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE9142087141200673A71 /* DataService.swift */; };
 		922BE919208716B700673A71 /* JobsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE9042087137500673A71 /* JobsCell.swift */; };
 		922BE91A208716BA00673A71 /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE9032087137500673A71 /* DetailsCell.swift */; };
 		922BE91B208716BD00673A71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE9172087143800673A71 /* Constants.swift */; };
 		922BE91C208716BF00673A71 /* JobDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE9182087143800673A71 /* JobDetails.swift */; };
+		922BE91E20871A2800673A71 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE91D20871A2800673A71 /* DataService.swift */; };
+		922BE92120871A4900673A71 /* JobDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE91F20871A4900673A71 /* JobDetailsVC.swift */; };
+		922BE92220871A4900673A71 /* JobsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE92020871A4900673A71 /* JobsVC.swift */; };
+		922BE92520871A5800673A71 /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE92320871A5800673A71 /* Jobs.swift */; };
+		922BE92620871A5800673A71 /* JobsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BE92420871A5800673A71 /* JobsDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +31,13 @@
 		922BE8F82087117E00673A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		922BE9032087137500673A71 /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
 		922BE9042087137500673A71 /* JobsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCell.swift; sourceTree = "<group>"; };
-		922BE906208713A100673A71 /* JobsDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobsDetails.swift; path = "../../../Madad16-Xx copy/Madad/Model/JobsDetails.swift"; sourceTree = "<group>"; };
-		922BE907208713A100673A71 /* Jobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Jobs.swift; path = "../../../Madad16-Xx copy/Madad/Model/Jobs.swift"; sourceTree = "<group>"; };
-		922BE90B208713C600673A71 /* JobDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobDetailsVC.swift; path = "../../../Madad16-Xx copy/Madad/Controller/JobDetailsVC.swift"; sourceTree = "<group>"; };
-		922BE90C208713C600673A71 /* JobsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobsVC.swift; path = "../../../Madad16-Xx copy/Madad/Controller/JobsVC.swift"; sourceTree = "<group>"; };
-		922BE9142087141200673A71 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = "../../../Madad16-Xx copy/Madad/Services/DataService.swift"; sourceTree = "<group>"; };
 		922BE9172087143800673A71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		922BE9182087143800673A71 /* JobDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetails.swift; sourceTree = "<group>"; };
+		922BE91D20871A2800673A71 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		922BE91F20871A4900673A71 /* JobDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobDetailsVC.swift; sourceTree = "<group>"; };
+		922BE92020871A4900673A71 /* JobsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsVC.swift; sourceTree = "<group>"; };
+		922BE92320871A5800673A71 /* Jobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jobs.swift; sourceTree = "<group>"; };
+		922BE92420871A5800673A71 /* JobsDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +96,8 @@
 		922BE9052087139300673A71 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				922BE907208713A100673A71 /* Jobs.swift */,
-				922BE906208713A100673A71 /* JobsDetails.swift */,
+				922BE92320871A5800673A71 /* Jobs.swift */,
+				922BE92420871A5800673A71 /* JobsDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,8 +105,8 @@
 		922BE90A208713B300673A71 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				922BE90B208713C600673A71 /* JobDetailsVC.swift */,
-				922BE90C208713C600673A71 /* JobsVC.swift */,
+				922BE91F20871A4900673A71 /* JobDetailsVC.swift */,
+				922BE92020871A4900673A71 /* JobsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,7 +114,7 @@
 		922BE9132087140A00673A71 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				922BE9142087141200673A71 /* DataService.swift */,
+				922BE91D20871A2800673A71 /* DataService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -199,15 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				922BE90E208713C700673A71 /* JobsVC.swift in Sources */,
-				922BE909208713A100673A71 /* Jobs.swift in Sources */,
+				922BE92220871A4900673A71 /* JobsVC.swift in Sources */,
 				922BE91A208716BA00673A71 /* DetailsCell.swift in Sources */,
+				922BE92620871A5800673A71 /* JobsDetails.swift in Sources */,
 				922BE919208716B700673A71 /* JobsCell.swift in Sources */,
-				922BE908208713A100673A71 /* JobsDetails.swift in Sources */,
+				922BE92520871A5800673A71 /* Jobs.swift in Sources */,
+				922BE92120871A4900673A71 /* JobDetailsVC.swift in Sources */,
+				922BE91E20871A2800673A71 /* DataService.swift in Sources */,
 				922BE8ED2087116900673A71 /* AppDelegate.swift in Sources */,
 				922BE91C208716BF00673A71 /* JobDetails.swift in Sources */,
-				922BE90D208713C700673A71 /* JobDetailsVC.swift in Sources */,
-				922BE9152087141200673A71 /* DataService.swift in Sources */,
 				922BE91B208716BD00673A71 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
